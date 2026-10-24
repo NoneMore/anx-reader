@@ -6,21 +6,8 @@
   <img src="./docs/images/Anx-logo.jpg" alt="Anx-logo" width="100" />
 </p>
 <h1 align="center">Anx Reader</h1>
-<p align="center"><a href="https://trendshift.io/repositories/10329" target="_blank"><img src="https://trendshift.io/api/badge/repositories/10329" alt="Anxcye%2Fanx-reader | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a></p>
 
-<p align="center">
-  <a href="https://github.com/Anxcye/anx-reader#platform-support"><img src="https://img.shields.io/badge/platform-windows%20%7C%20macos%20%7C%20iOS%20%7C%20Android-lightgrey" alt="Platformlar"></a>
-  <a href="https://github.com/Anxcye/anx-reader#supported-formats"><img src="https://img.shields.io/badge/formats-epub%20%7C%20fb2%20%7C%20mobi%20%7C%20txt%20%7C%20azw3%20%7C%20pdf-brightgreen" alt="Desteklenen Formatlar"></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Anxcye/anx-reader/releases/latest"><img src="https://img.shields.io/github/v/release/anxcye/anx-reader" alt="En Son Sürüm"></a>
-  <a href="https://github.com/Anxcye/anx-reader/releases"><img src="https://img.shields.io/github/v/release/anxcye/anx-reader?include_prereleases" alt="Ön Sürüm"></a>
-  <a href="https://github.com/Anxcye/anx-reader/blob/main/LICENSE"><img src="https://img.shields.io/github/license/anxcye/anx-reader" alt="Lisans" ></a>
-  <a href="https://github.com/Anxcye/anx-reader/releases"><img src="https://img.shields.io/github/downloads/anxcye/anx-reader/total" alt="İndirmeler"></a>
-  <a href="https://hellogithub.com/repository/819a2b3050204451bed552a8812114e5" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=819a2b3050204451bed552a8812114e5&claim_uid=WBA1XOQirm2GRqs&theme=small" alt="Öne Çıkan｜HelloGitHub"/></a>
-  <a href="https://github.com/anxcye/anx-reader/stargazers"><img src="https://img.shields.io/github/stars/anxcye/anx-reader" alt="Yıldızlar"></a>
-</p>
+> **Kişisel fork:** Bu depo, [Anx Reader](https://github.com/Anxcye/anx-reader) temel alınarak kişisel geliştirme ve özelleştirme amacıyla sürdürülmektedir; yukarı akış projesinin resmî dağıtım veya destek kanalı değildir.
 
 Anx Reader, kitap severler için özenle hazırlanmış bir e-kitap okuma uygulamasıdır. Güçlü yapay zeka yetenekleri ve geniş format desteğiyle okuma deneyimini daha akıllı ve odaklı hâle getirir. Modern arayüz tasarımıyla, saf okuma keyfini sunmayı hedefliyoruz.
 
@@ -40,67 +27,11 @@ Anx Reader, kitap severler için özenle hazırlanmış bir e-kitap okuma uygula
 | OPDS Katalogları | Yerleşik OPDS desteği ve özel katalog yönetimi | 🛠️ Çalışılıyor |
 
 
-<table border="1">
-  <tr>
-    <th>İşletim Sistemi</th>
-    <th>Kaynak</th>
-  </tr>
-  <tr>
-    <td>iOS</td>
-    <td>
-      <a href="https://apps.apple.com/app/anx-reader/id6743196413" target="_blank">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" height="45"/>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>macOS</td>
-    <td>
-      <a href="https://apps.apple.com/app/anx-reader/id6743196413" target="_blank"><img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-mac-app-store.svg" alt="Mac App Store" height="45"/></a>
-      <a href="https://github.com/Anxcye/anx-reader/releases/latest" target="_blank"><img src="https://github.com/user-attachments/assets/cf61e197-d756-4606-a8ad-fb591f79fdfc" alt="GitHub" height="45"/></a>
-    </td>
-  </tr>
-  <tr>
-    <td>Windows</td>
-    <td>
-      <a href="https://github.com/Anxcye/anx-reader/releases/latest" target="_blank">
-        <img src="https://github.com/user-attachments/assets/cf61e197-d756-4606-a8ad-fb591f79fdfc" alt="GitHub" height="45"/>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>Android</td>
-    <td>
-      <a href="https://github.com/Anxcye/anx-reader/releases/latest" target="_blank">
-        <img src="https://github.com/user-attachments/assets/cf61e197-d756-4606-a8ad-fb591f79fdfc" alt="GitHub" height="45"/>
-      </a>
-      <a href="https://f-droid.org/packages/com.anxcye.anx_reader" target="_blank">
-        <img src="./docs/get-it-on.png" alt="Get it on F-Droid" height="45" />
-      </a>
-    </td>
-  </tr>
-</table>
 
 
-## Topluluk Projeleri
-Aşağıdaki projeler topluluk tarafından geliştirilmekte olup resmi olarak desteklenmemektedir. Bu projelere ilişkin sorunlar veya geri bildirimler için lütfen ilgili proje sahipleriyle iletişime geçin.
 
-**Calibre Eklentisi** [anx-reader-calibre-plugin](https://github.com/ptbsare/anx-reader-calibre-plugin)
-
-Calibre içinden ANX Reader e-kitap kütüphanenizi doğrudan yönetmenizi sağlayan bir eklenti. Özellikle kitaplığını NAS üzerinde merkezileştirmek isteyen kullanıcılar için faydalıdır.
-
-**Web Kütüphane Yöneticisi** [anx-calibre-manager](https://github.com/ptbsare/anx-calibre-manager)
-
-Calibre entegrasyonu ve ANX Reader cihazları için WebDAV sunucu işlevleri sunan modern bir web uygulaması.
-
-
-## Bir Sorunla Karşılaştım, Ne Yapmalıyım?
-- [Sorun Giderme](./docs/troubleshooting.md#English) bölümünü kontrol edin.
-- Bir [sorun bildirin](https://github.com/Anxcye/anx-reader/issues/new/choose); en kısa sürede yanıtlayacağız.
-
-Telegram Grubu: [https://t.me/AnxReader](https://t.me/AnxReader)
-
-QQ Grubu: 1042905699
+## Sorun giderme
+[Sorun giderme kılavuzuna](./docs/troubleshooting.md) bakın.
 
 ### Ekran Görüntüleri
 | ![](./docs/images/wide1.png) | ![](./docs/images/wide2.png) |
@@ -115,11 +46,6 @@ QQ Grubu: 1042905699
 | ![](./docs/images/mobile4.png) | ![](./docs/images/mobile5.png) | ![](./docs/images/mobile6.png) |
 | ![](./docs/images/mobile7.png) | ![](./docs/images/mobile8.png) | ![](./docs/images/mobile9.png) |
 
-## Bağışlar
-Anx Reader'ı seviyorsanız projeyi desteklemek için bağış yapmayı düşünebilirsiniz. Bağışlarınız, projeyi sürdürmemize ve geliştirmemize yardımcı olur.
-
-❤️ [Bağış Yap](https://anxcye.com/home/7)
-
 ## Derleme
 Anx Reader'ı kaynak kodundan derlemek ister misiniz? Lütfen şu adımları izleyin:
 - [Flutter](https://flutter.dev) kurun.
@@ -132,16 +58,7 @@ Anx Reader'ı kaynak kodundan derlemek ister misiniz? Lütfen şu adımları izl
 Flutter sürüm uyumsuzluklarıyla karşılaşabilirsiniz. Detaylar için [Flutter dokümantasyonuna](https://flutter.dev/docs/get-started/install) bakın.
 
 
-## Kod imzalama politikası
-- Katkıda bulunanlar ve gözden geçirenler: [Members ekibi](https://github.com/anxcye/anx-reader/graphs/contributors)
-- Onaylayıcılar: [Owners](https://github.com/anxcye)
-- [Gizlilik Politikası](https://anx.anxcye.com/privacy.html)
-- [Hizmet Şartları](https://anx.anxcye.com/terms.html)
-
-### Sponsorlar
-| ![signpath](https://signpath.org/assets/favicon-50x50.png) | Windows'ta ücretsiz kod imzalama [SignPath.io](https://about.signpath.io/) tarafından sağlanır, sertifika [SignPath Foundation](https://signpath.org/) tarafından temin edilir |
-|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-
+Ek geliştirme notları: [docs/DEVELOPMENT.md](./docs/DEVELOPMENT.md).
 
 ## Lisans
 Bu proje [MIT Lisansı](./LICENSE) ile lisanslanmıştır.
