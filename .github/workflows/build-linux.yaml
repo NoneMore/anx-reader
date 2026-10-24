@@ -1,17 +1,6 @@
-name: Build Linux
-# Called from build.yaml with version + flutter_version from setup.
-# workflow_dispatch: manual packaging test without a release tag (version /
-# flutter_version default from pubspec / .github/flutter-version).
+name: Build Linux (Manual)
 
 on:
-  workflow_call:
-    inputs:
-      version:
-        required: true
-        type: string
-      flutter_version:
-        required: true
-        type: string
   workflow_dispatch:
     inputs:
       version:
