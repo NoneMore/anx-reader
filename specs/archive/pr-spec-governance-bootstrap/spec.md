@@ -19,7 +19,7 @@ Includes human-readable governance rules, lightweight Agent navigation, PR templ
 
 ## Outcome
 
-Governance policy, Agent pointer, PR template, Python Git-history checker, its synthetic tests, and PR workflow were added. The bootstrap Change was activated before the implementation and moved into archive before requesting merge. No application code, branch-protection settings, or release automation were changed. Enforcement remains advisory until the administrator enables required branch checks after bootstrap merge. The governance guide, Agent entry point, and routine PR template were subsequently simplified, removing upstream/fork-specific standing requirements without changing the Spec lifecycle or validator.
+Governance policy, Agent pointer, PR template, Python Git-history checker, its synthetic tests, and PR workflow were added. The bootstrap Change was activated before the implementation and moved into archive before requesting merge. No application code, branch-protection settings, or release automation were changed. Enforcement remains advisory until the administrator enables required branch checks after bootstrap merge. The governance guide, Agent entry point, and routine PR template were subsequently simplified, removing upstream/fork-specific standing requirements without changing the Spec lifecycle or validator. Concise guidance on Change granularity, proportionate Specs, documentation updates, useful comments, and unmerged PR closure was then restored.
 
 ## Verification
 

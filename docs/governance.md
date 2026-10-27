@@ -7,15 +7,19 @@ This is the shared governance policy for `NoneMore/anx-reader`. It applies to PR
 - **Code first:** Tracked code and relevant build/runtime evidence establish current behavior. Active Specs describe intended changes; archived Specs record historical outcomes, not necessarily current or deployed behavior.
 - **Development:** [`DEVELOPMENT.md`](DEVELOPMENT.md) covers setup, builds, and tests.
 - **Architecture and decisions:** Document important implemented boundaries in `docs/architecture/` and consequential architectural decisions in `docs/adr/` when useful. Record superseding decisions in new ADRs rather than rewriting old ones.
+- **Documentation updates:** Update development guidance and architecture docs when related workflows or implemented boundaries change; unrelated edits need no documentation updates.
+- **Comments:** Preserve non-obvious invariants, constraints, and rationale near the relevant code; do not restate obvious behavior.
 - **Navigation:** Consult only material relevant to the task. `AGENTS.md` directs agents to this policy rather than defining separate governance rules.
 
 ## PR-scoped Change lifecycle
 
-Every PR targeting `main` follows the same lifecycle. A Change belongs to one PR; a PR may include several Changes.
+Every PR targeting `main` follows the same lifecycle. A Change belongs to one PR; a PR may include several Changes. A Change represents a cohesive intent, not a list of tasks; keep Specs proportional to the size and complexity of the work.
 
 1. **Activate first:** Introduce a new `specs/active/<change>/spec.md` before changing files outside `specs/`. All participating Changes must be active before the first implementation commit. A Spec activation commit must not also modify non-`specs/` files.
 2. **Implement:** Keep intent and scope current during implementation and review. Add optional `design.md` or `tasks.md` only when useful; track volatile progress and ownership in PRs or issues.
 3. **Archive before merge:** Move each Change directory to `specs/archive/<change>/` and record actual outcomes, verification, and unresolved work, including partial or cancelled results. If implementation changes after archival, update the outcome and verification. The prospective merge tree must contain no tracked files under `specs/active/`.
+
+If a PR closes without merging, record the reason in the PR; no archive is required.
 
 Change names must be unique lowercase `kebab-case` (up to 80 characters); do not reuse names already active or archived on the target branch. Do not alter historical archives or reactivate completed Changes.
 
