@@ -1,0 +1,41 @@
+name: PR Spec Lifecycle
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: pr-spec / validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate lifecycle against Git history
+        shell: bash
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          CHECKER=scripts/governance/check_pr_spec.py
+          if git cat-file -e "${BASE_SHA}:${CHECKER}" 2>/dev/null; then
+            git show "${BASE_SHA}:${CHECKER}" > /tmp/check_pr_spec.py
+            echo 'Using trusted validator from target branch'
+          else
+            # Initial bootstrap only: base branch has no validator yet.
+            # This validation is advisory until the bootstrap PR is reviewed,
+            # merged, and status checks are configured in branch protection.
+            echo '::warning::Bootstrap fallback: validator not present on base; manual review required'
+            git show "${HEAD_SHA}:${CHECKER}" > /tmp/check_pr_spec.py
+          fi
+          python3 /tmp/check_pr_spec.py \
+            --base "$BASE_SHA" \
+            --head "$HEAD_SHA" \
+            --merge "$(git rev-parse HEAD)"
+      - name: Test validator on synthetic Git histories
+        run: python3 -m unittest discover -s test/governance -v

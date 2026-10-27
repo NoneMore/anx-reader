@@ -53,7 +53,7 @@ release.sh
 /.vscode/
 CLAUDE.md
 .claude/
-AGENTS.md
+# AGENTS.md is versioned as a short adapter to docs/governance.md
 
 macos/DerivedData/
 
