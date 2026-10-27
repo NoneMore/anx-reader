@@ -1,6 +1,6 @@
-# Project governance (personal fork)
+# Project governance
 
-This is the shared governance policy for `NoneMore/anx-reader`, a personal fork of `Anxcye/anx-reader`, not an official upstream release or support channel. It applies to PRs targeting the fork's `main` branch. Changes made before adoption do not require retroactive Specs or ADRs.
+This is the shared governance policy for `NoneMore/anx-reader`. It applies to PRs targeting `main`. Changes made before adoption do not require retroactive Specs or ADRs.
 
 ## Principles and documentation
 
@@ -11,7 +11,7 @@ This is the shared governance policy for `NoneMore/anx-reader`, a personal fork 
 
 ## PR-scoped Change lifecycle
 
-Every PR targeting `main`, including documentation, CI, dependencies, automated changes, and upstream synchronization, follows the same lifecycle. A Change belongs to one PR; a PR may include several Changes.
+Every PR targeting `main` follows the same lifecycle. A Change belongs to one PR; a PR may include several Changes.
 
 1. **Activate first:** Introduce a new `specs/active/<change>/spec.md` before changing files outside `specs/`. All participating Changes must be active before the first implementation commit. A Spec activation commit must not also modify non-`specs/` files.
 2. **Implement:** Keep intent and scope current during implementation and review. Add optional `design.md` or `tasks.md` only when useful; track volatile progress and ownership in PRs or issues.
@@ -27,14 +27,7 @@ Required `spec.md` sections (case-insensitive Markdown `##` headings):
 ## Review and enforcement
 
 - `.github/workflows/pr-spec.yaml` checks the structural lifecycle and prospective merge tree using `scripts/governance/check_pr_spec.py`. `.github/workflows/ci.yaml` runs Flutter analysis and tests. CI cannot judge intent or prove deployed behavior.
-- Human review evaluates change scope, implementation, verification, user-data and platform risks, and upstream/fork impact.
+- Human review evaluates change scope, implementation, verification, and relevant risks.
 - Configure `main` branch protection to require `pr-spec / validate` and Flutter CI (`analyze-and-test`) checks. Until then, CI results are advisory rather than enforced merge gates.
 - Before final validation, rebase or merge the latest `main` into the PR branch.
 - Do not push directly to `main` except for urgent recovery when the normal PR process is unavailable. Record the reason, affected SHA, scope, and validation; restore protections and document follow-up work in a compliant PR. Do not fabricate retroactive Specs.
-
-## Upstream and fork-specific changes
-
-- `main` is the fork's integration branch. Synchronize from `Anxcye/anx-reader` (normally `upstream/develop`).
-- Use a dedicated `sync/*` PR and a new Change for upstream synchronization. Record the upstream SHA, previous fork base SHA, conflicts, retained patches, regression tests, and outcome. Upstream merge commits do not waive Spec-first.
-- Preserve fork-specific modifications, including `third_party/` overrides, unless a reviewed Change explicitly justifies replacing them.
-- Do not restore removed upstream community triage, store-signing, automated release, or publishing workflows merely because they appear upstream. Any reversal requires its own reviewed Change.

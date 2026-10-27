@@ -2,9 +2,9 @@
 
 Link the new Change(s) activated in this PR and summarize intended behavior:
 
-## Implementation and fork impact
+## Implementation and impact
 
-Mention code areas, upstream conflict risks, retained custom patches, and any architecture/ADR updates:
+Summarize what changed and any relevant impacts:
 
 ## Verification
 
