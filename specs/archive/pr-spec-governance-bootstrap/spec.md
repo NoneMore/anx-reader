@@ -19,11 +19,11 @@ Includes human-readable governance rules, lightweight Agent navigation, PR templ
 
 ## Outcome
 
-Governance policy, Agent pointer, PR template, Python Git-history checker, its synthetic tests, and PR workflow were added. The bootstrap Change was activated before the implementation and moved into archive before requesting merge. No application code, branch-protection settings, or release automation were changed. Enforcement remains advisory until the administrator enables required branch checks after bootstrap merge.
+Governance policy, Agent pointer, PR template, Python Git-history checker, its synthetic tests, and PR workflow were added. The bootstrap Change was activated before the implementation and moved into archive before requesting merge. No application code, branch-protection settings, or release automation were changed. Enforcement remains advisory until the administrator enables required branch checks after bootstrap merge. The governance guide and Agent entry point were subsequently edited for clarity and concision without changing the lifecycle contract or validator.
 
 ## Verification
 
-Locally executed `python3 -m unittest discover -s test/governance -v` with 13 passing synthetic Git-history tests prior to publishing. GitHub PR checks must be reviewed for the submitted commit; Flutter analyze/tests were not run in this documentation/CI-authoring environment. Branch-protection and post-bootstrap trusted-base validator behavior require manual verification following merge.
+Locally executed `python3 -m unittest discover -s test/governance -v` with 13 passing synthetic Git-history tests prior to publishing. GitHub PR checks must be reviewed for the final submitted commit; Flutter analyze/tests were not run in this documentation/CI-authoring environment. Branch-protection and post-bootstrap trusted-base validator behavior require manual verification following merge.
 
 ## Unresolved
 
