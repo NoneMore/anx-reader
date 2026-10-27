@@ -64,6 +64,8 @@ You may encounter Flutter version incompatibility issues. Please refer to the [F
 
 More local development notes: [docs/DEVELOPMENT.md](./docs/DEVELOPMENT.md).
 
+Fork development and contribution governance: [docs/governance.md](./docs/governance.md).
+
 ## License
 This project is licensed under the [MIT License](./LICENSE).
 

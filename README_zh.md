@@ -56,3 +56,5 @@ Anx Reader，一款为热爱阅读的你精心打造的电子书阅读器。集�
 您可能遇到 Flutter 版本不兼容的问题，请参考 [Flutter 文档](https://flutter.dev/docs/get-started/install)。
 
 其他本地开发与调试说明参见 [docs/DEVELOPMENT.md](./docs/DEVELOPMENT.md)。
+
+本 Fork 的开发与 PR-Spec 治理规则参见 [docs/governance.md](./docs/governance.md)。
